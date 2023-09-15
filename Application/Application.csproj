@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Domain\Exceptions\" />
+      <Folder Include="Domain\Services\" />
+      <Folder Include="Drivens\AuthService\" />
+      <Folder Include="Drivens\Database\" />
+      <Folder Include="Drivens\UserStorage\" />
+      <Folder Include="Drivings\Admin\" />
+      <Folder Include="Drivings\Developers\" />
+      <Folder Include="Drivings\User\" />
+    </ItemGroup>
+
+</Project>
