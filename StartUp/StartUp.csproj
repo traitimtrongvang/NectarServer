@@ -13,4 +13,9 @@
       </Content>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Application\Application.csproj" />
+      <ProjectReference Include="..\Drivings\RestfulApi\RestfulApi.csproj" />
+    </ItemGroup>
+
 </Project>

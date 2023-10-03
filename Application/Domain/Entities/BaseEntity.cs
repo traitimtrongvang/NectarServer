@@ -2,12 +2,11 @@
 
 namespace Application.Domain.Entities;
 
-public abstract class BaseEntity<TId> 
-    where TId : BaseGuidId
+public abstract class BaseEntity<TId> where TId : BaseGuidId
 {
-    public required TId Id { get; init; }
+    public TId Id { get; init; } = (TId)Activator.CreateInstance(typeof(TId), new object[] {Guid.NewGuid()})!;
 
-    public required DateTime CreatedAt { get; init; }
+    public DateTime CreatedAt { get; init; } = DateTime.Now;
 
     public DateTime? UpdatedAt { get; set; } = default;
 }
